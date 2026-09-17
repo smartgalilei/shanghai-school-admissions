@@ -409,7 +409,7 @@
   <main>
     <div class="wrap">
       <section class="summary" aria-label="概览">
-        <div class="metric"><strong>7</strong><span>所学校 / 实体核对</span></div>
+        <div class="metric"><strong>8</strong><span>所学校 / 实体核对</span></div>
         <div class="metric"><strong>3</strong><span>所已公布 2027-2028 轮次</span></div>
         <div class="metric"><strong>4</strong><span>所需外籍 / 港澳台 / 教委许可资格</span></div>
         <div class="metric"><strong>3</strong><span>类评估：面谈、语言、学科或无强制测试</span></div>
@@ -456,6 +456,42 @@
 
   <script>
     const schools = [
+      {
+        name: "上海市民办中芯学校国际部 SMIC-I",
+        entity: "Shanghai SMIC Private School International Division；本条仅对应国际部 G1，不含中文部或高中出国留学班。核对：2026-09-18。",
+        status: "verify",
+        type: "private",
+        statusLabel: "2027 G1 待官网确认；既有官方材料参考",
+        grade: "国际部小学一年级 G1；具体名额及校区安排待当季招生通知。",
+        eligibility: "2024 官方须知要求符合上海市教委外籍人员子女学校申请条件，依家庭护照、在沪工作和居住情况分六类核验；包括符合条件的外籍、港澳台、境外出生及部分中国籍家庭。不能简单理解为所有中国籍学生均可申请；以招生办当季审核为准。",
+        assessment: "旧版官方流程：网上申请、教师问卷及到校材料提交完成后，才安排入学评估。2027 G1 的评估内容、面谈形式与日期尚未核实。",
+        age: "2027 G1 出生日期范围待官方确认，不将其他学年的年龄要求直接套用。",
+        openCampus: {
+          items: [["待确认", "本次未取得可确认的 2027 入学季开放日日期或具体预约场次；不能据此认定没有活动。", "warn"]],
+          method: "向招生办咨询国际部 G1 参观及报名安排。下列问卷和 OpenApply 地址见招生资料，本轮未能验证页面内容或可约时段；咨询登记不等于完成正式申请。",
+          links: [["招生咨询问卷（待核验）", "https://www.smicschool.com/admissions/smic-applicants-survey/"], ["OpenApply 申请入口（待核验）", "https://smicschool.openapply.cn/"], ["学校官网", "https://www.smicschool.com/"]]
+        },
+        materials: [
+          "2024 官方须知：学生及父母身份证件、亲属关系证明、在沪居住证明、父母一方在沪在职证明；需按类别提供原件和复印件。",
+          "打印网上申请表；预防接种记录（含姓名页）。",
+          "2024 版明确：幼儿园及 G1 第一学期申请不用提供成绩单；G1 下学期等插班另有要求。",
+          "依身份类别另需工作或居留许可、海外出生证明及认证、结婚或抚养权证明、教委证明信等；不是每个家庭都需全部提交。认证方式须向招生办复核。",
+          "旧流程另列两寸照片及班主任 / 学校管理员保密问卷；当季以申请确认邮件及系统清单为准。",
+          "2027 学费、申请费金额及付款时间未核实，不采用第三方费用作为已公布标准。"
+        ],
+        timeline: [
+          ["申请开放 / 截止", "2027 G1 具体日期待官方确认。", "warn"],
+          ["既有申请流程", "在线提交后查收确认邮件，按邮件要求完成后续材料手续。", "ref"],
+          ["入学评估", "旧版流程要求先完成申请及材料提交，再由学校安排评估；2027 日期待确认。", "ref"],
+          ["录取通知", "未核实 2027 G1 统一放榜时间或审核时长。", "warn"]
+        ],
+        difference: "官方文件存在版本差异：材料优先参考官网 2024 版须知，2022 版仅辅助了解流程，最终按当季确认邮件办理。招生网页和申请系统本轮未能完整读取，未找到不等于学校尚未发布。",
+        sources: [
+          ["官方申请须知及身份分类（2024 版；2026-09-18 核对）", "https://www.smicschool.com/wp-content/uploads/2024/09/SMIC-I-Application-Guidelines-2024.pdf"],
+          ["官方申请流程（2022 旧版参考）", "https://www.smicschool.com/wp-content/uploads/2022/09/Application-Procedure-Feb-11-2022.pdf"],
+          ["2026 招生信息转载（仅辅助定位入口）", "https://www.guojixuexiao.org/school/shzxxx/news/21929.html"]
+        ]
+      },
       {
         name: "复旦大学附属中学国际部 FDIS",
         entity: "Fudan International School；本条对应招收一年级的国际部，小学部地址：杨浦区国权路325号。",
