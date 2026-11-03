@@ -409,7 +409,7 @@
   <main>
     <div class="wrap">
       <section class="summary" aria-label="概览">
-        <div class="metric"><strong>8</strong><span>所学校 / 实体核对</span></div>
+        <div class="metric"><strong>9</strong><span>所学校 / 实体核对</span></div>
         <div class="metric"><strong>5</strong><span>所已公布 2027-2028 招生安排</span></div>
         <div class="metric"><strong>4</strong><span>所需外籍 / 港澳台 / 教委许可资格</span></div>
         <div class="metric"><strong>3</strong><span>类评估：面谈、语言、学科或无强制测试</span></div>
@@ -447,6 +447,7 @@
           <li>上海市世外小学国际部：2026-27 新生一年级招生页面，学校落款 2025-11-13；上海市世外小学 2026 招生简章，2026-04-07。</li>
           <li>SAS：招生首页和申请流程页面，2027-2028 轮次已公布；申请开放新闻发布 2026-08-19。</li>
           <li>LFS：2027-2028 注册页面确认 2026-11-02 开放申请；财务页已列新学年行政及注册费，学费仍待公布。2026-11-03 核验。</li>
+          <li>BISS Puxi：2026-11-03 新增并核验官网招生、资格、费用及开放日页面；滚动招生信息未注明适用学年，费用按 2026-2027 参考，2027-2028 需招办确认。</li>
           <li>上实国际部、进才国际部：官方公开站点用于实体与联系方式；具体 2026 批次时间主要来自学校公众号内容的公开转载，需以学校公众号 / 招办邮件最终确认为准。</li>
           <li>Open Campus：SHSID 2027 幼升小活动安排已公布；世外 2026 校园开放日、SESID 2026 入学活动、SAS 2027-2028 校园参观入口、LFS 月度 Open Days 页面；JCID 暂未找到当前公开的 G1 专场日期。</li>
         </ul>
@@ -456,6 +457,44 @@
 
   <script>
     const schools = [
+      {
+        name: "上海英国学校（浦西）BISS Puxi",
+        entity: "The British International School Shanghai, Puxi；诺德安达旗下，闵行区华漕镇金光路111号。2026-11-03 核验，页面未标更新日。",
+        status: "verify",
+        type: "foreign",
+        statusLabel: "全年滚动申请；2027-2028 入学安排待确认",
+        grade: "英国学制 Primary；申请时请招生办按出生日期确认 Year Group，不能直接把英制 Year 1 等同于美制 G1。",
+        eligibility: "集团上海官方介绍将 BISS Puxi 列为面向持非中国护照学生的国际学校。签证、在沪工作居留及其他身份情形的具体文件要求须由招办按上海政策审核；不据此推定中国护照学生可申请。",
+        age: "本轮未取得 2027-2028 出生日期与年级对照表。柯南申请的具体英制年级需招生办核定。",
+        assessment: "提交材料后按年龄、申请年级及档案安排评估，可能包括在线测试、面谈及英语评估。小学家庭可能与小学校长面谈；官网未列低龄申请的统一考试日期或固定科目。",
+        openCampus: {
+          items: [
+            ["2026-11-21 09:00–12:00", "周六 Academic Discovery Morning，官网活动栏已公布，时间为上海当地时间；参加年级及余位请预约时确认。", "ok"],
+            ["预约制", "可预约一对一校园参观或 Virtual Discovery Meeting。官网 FAQ 仍列旧开放日，应以当前活动栏及招办确认为准。", "ok"]
+          ],
+          method: "在官方 Join our Open Day 页面点击 BOOK A VISIT / 页面预约表；该按钮本次跳转招生首页，如未显示预约表，请联系 admissions@bisspuxi.com 或 021-52263211。正式申请使用另一个在线申请页面。",
+          links: [["11月21日官方活动及预约", "https://www.nordangliaeducation.com/biss-puxi/admissions/join-our-open-day"], ["联系招生办", "https://www.nordangliaeducation.com/biss-puxi/contact-us"], ["正式在线申请", "https://www.nordangliaeducation.com/biss-puxi/admissions/online-application-form"]]
+        },
+        materials: [
+          "在线申请表、护照资料、医疗资料、最近两年学校报告；低龄儿童可提供的报告形式由招办确认。",
+          "学校可能根据年龄追加推荐资料及评估；完整 checklist、父母证件及在沪资格材料要求以招生办通知为准。本次未完整读取嵌入式申请表。",
+          "申请费 4,000 元，不退，提交申请时缴付；此为当前 2026-2027 费用参考，2027-2028 金额需确认。"
+        ],
+        timeline: [
+          ["全年", "官网接受全年滚动申请，按余位安排；未单列 2027-2028 申请开放日、统一截止或评估批次。", "ref"],
+          ["流程", "联系招办 / 参观 → 在线申请及材料 → 年龄相符评估 → 校长审核 → 通知状态及后续手续。", "ref"],
+          ["约两周", "官网称从初次联系至 offer 通常不超过两周，但取决于表格及资料完成速度；不能视作保证录取或固定放榜时限。", "ref"],
+          ["2026-2027 费用参考", "官网小学 Year 1–6 年费列 329,800 元；申请费 4,000 元、接受学位时入学费 4,500 元（均不退），资源费 16,000 元按离校条件退款。2027-2028 学费未核实，校车及餐费另计。", "ref"]
+        ],
+        difference: "本条对应 BISS Puxi（浦西），与诺德安达浦东 NAIS Pudong 分别招生。所有年级匹配、低龄材料替代方式、2027 学位及费用均需向本校招办确认。",
+        sources: [
+          ["BISS Puxi 官方招生", "https://www.nordangliaeducation.com/biss-puxi/admissions"],
+          ["申请材料及评估", "https://www.nordangliaeducation.com/biss-puxi/admissions/entry-requirements"],
+          ["官方费用（2026-2027参考）", "https://www.nordangliaeducation.com/biss-puxi/admissions/tuition-fees"],
+          ["官方开放日", "https://www.nordangliaeducation.com/biss-puxi/admissions/join-our-open-day"],
+          ["集团上海学校资格说明", "https://www.nordangliaeducation.com/our-schools/asia/china/shanghai"]
+        ]
+      },
       {
         name: "上海市民办中芯学校国际部 SMIC-I",
         entity: "Shanghai SMIC Private School International Division；本条仅对应国际部 G1，不含中文部或高中出国留学班。核对：2026-09-18。",
