@@ -409,8 +409,8 @@
   <main>
     <div class="wrap">
       <section class="summary" aria-label="概览">
-        <div class="metric"><strong>10</strong><span>所学校 / 实体核对</span></div>
-        <div class="metric"><strong>5</strong><span>所已公布 2027-2028 招生安排</span></div>
+        <div class="metric"><strong>11</strong><span>所学校 / 实体核对</span></div>
+        <div class="metric"><strong>6</strong><span>所已公布 2027-2028 招生安排</span></div>
         <div class="metric"><strong>4</strong><span>所需外籍 / 港澳台 / 教委许可资格</span></div>
         <div class="metric"><strong>3</strong><span>类评估：面谈、语言、学科或无强制测试</span></div>
       </section>
@@ -442,6 +442,7 @@
         <h2>官网来源与更新时间</h2>
         <p>页面内“来源”均链接到相应学校或政府网页；第三方转载只用于补充官网不可直接抓取的公众号招生内容，并已在学校卡片中标注。</p>
         <ul>
+          <li>Concordia 协和国际：2026-11-04 新增并直接核验官网；2027-2028 已开放申请，首轮11月12日截止。检索工具部分页面返回403，直接读取官网正文成功；费用仍为2026-2027参考。</li>
           <li>上海市教委 / 上海政府：外籍人员子女入学资格与 2026 义务教育招生政策，更新 2026-07-23 / 2026-03-26。</li>
           <li>SHSID：2027 幼升小活动安排发布于 2026-08-29；招生概况 2025-09-01，在线申请 2024-09-04，报名材料 2023-09-07，收费 2026-04-10。</li>
           <li>上海市世外小学国际部：2026-27 新生一年级招生页面，学校落款 2025-11-13；上海市世外小学 2026 招生简章，2026-04-07。</li>
@@ -458,6 +459,44 @@
 
   <script>
     const schools = [
+      {
+        name: "上海协和国际外籍人员子女学校 Concordia",
+        entity: "Concordia International School Shanghai；浦东金桥，访客入口黄杨路345号。独立于协和双语SUIS及SCIS。2026-11-04核验，官网未注明公告更新时间。",
+        status: "2027",
+        type: "foreign",
+        statusLabel: "2027-2028已开放 · 首轮11月12日截止",
+        grade: "美式 Grade 1 / 小学一年级；申请年级由出生日期、原校学年及升学记录共同核定。",
+        eligibility: "须符合上海市教委规定，且学生在沪就读期间与至少一位家长同住。官网列外籍在沪工作家庭、港澳台家庭、境外出生中国籍子女、符合条件的中外籍婚生子女、父母海外永居且孩子外籍的家庭、以及持教委豁免函的全家海外永居中国籍家庭等类别；按各类文件清单审核，不代表所有中国籍学生均可申请。",
+        age: "官网9月1日年龄截止明确适用于Preschool至Kindergarten；G1–G12另考虑原校学年及正常升年级规则。本轮未核实2027 G1专属出生日期区间，请招办确认。",
+        assessment: "材料初审后，按年级与个案邀请面谈、英语评估或适龄活动；可能涉及数学、阅读、词汇、听力、写作，但并非G1固定考纲。提交申请不保证获得评估；学校可依据初审直接作不录取决定。",
+        openCampus: {
+          items: [
+            ["2026-11-21（周六）", "面向Preschool至Grade 5的Open Day，涵盖G1。官网列日期未列具体时间，需在预约系统确认。", "ok"],
+            ["预约制", "提供Preschool至G12的Individual Campus Tour及Virtual Information Session。12月3日活动仅面向G6–G12，不是G1专场。", "ok"]
+          ],
+          method: "从官方Visit Us页面选择Individual Campus Tour / Book now，或选择Open Day报名；参观不等于正式入学申请。咨询021-58990380、admissions@concordiashanghai.org。",
+          links: [["官方参观及开放日", "https://www.concordiashanghai.org/admissions/visit-us"], ["官方Open Day预约系统", "https://concordiashanghai.openapply.cn/events/new?only=Open+Day&c_campaign=2186"], ["正式申请OpenApply", "https://concordiashanghai.openapply.cn/"]]
+        },
+        materials: [
+          "OpenApply在线申请及个性化checklist：原校报告、按需测试成绩、保密推荐、申请费。",
+          "按家庭类别提供学生与父母护照、出生证、相关签证/居留及工作许可、在沪就业证明、盖章营业执照与居住证明；部分情形需婚姻证明、境外出生证明认证翻译或教委豁免函。以本校对应类别清单为准。",
+          "有学习支持需求须提供相关资料；医疗及其他补充文件以系统checklist为准。2026-2027申请费2,500元且不退，2027-2028费用待确认。"
+        ],
+        timeline: [
+          ["已开放", "官网明确接受2027-2028申请；未列首次开放日期。完整材料与申请费到齐后进入初审。", "ok"],
+          ["2026-11-12", "第一轮完整申请截止，2026年12月更新决定。", "ok"],
+          ["2027-02-26", "第二轮完整申请截止，2027年3月更新决定；后续滚动受理与更新。", "ok"],
+          ["评估与录取", "初审 → 按需面谈/评估 → 委员会审核 → 邮件通知；offer附接受及缴Capital Fee期限。未列统一G1评估日，录取以学校决定为准。", "ok"],
+          ["2026-2027费用参考", "K–G5全年一次付314,000元，分两学期各159,500元；申请费2,500元、一次性Capital Fee25,000元（均不退），需要ELL的新生另收一次性20,000元。2027-2028金额未核实。", "ref"]
+        ],
+        difference: "本条为浦东金桥Concordia，采用美式年级。K–G12要求适龄英语能力，是否需英语评估或ELL支持由学校审核；不要与协和双语SUIS混同。",
+        sources: [
+          ["2027-2028轮次及申请流程", "https://www.concordiashanghai.org/Admissions"],
+          ["官方资格、材料、年龄及评估", "https://www.concordiashanghai.org/admissions/requirements"],
+          ["校园参观及开放日", "https://www.concordiashanghai.org/admissions/visit-us"],
+          ["2026-2027费用参考", "https://www.concordiashanghai.org/admissions/tuition-payments"]
+        ]
+      },
       {
         name: "上海英国外籍人员子女学校（浦东）NAIS Pudong",
         entity: "Nord Anglia International School Shanghai, Pudong；原 BISS 浦东，2015年更名。浦东新区军民公路2888号。2026-11-03核验，页面未注明更新日。",
